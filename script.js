@@ -23,7 +23,7 @@ obj.load("Dice.obj",function(object){
 scene.background=texture.load("banner.jpg");
 
 camera.position.z=10;
-pointLight.position.set(5,0,10);
+pointLight.position.set(-5,0,10);
 directLight.position.set(5,0,10);
 
 scene.add(pointLight);
