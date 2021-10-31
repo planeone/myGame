@@ -24,7 +24,7 @@ scene.background=texture.load("banner.jpg");
 
 camera.position.z=10;
 pointLight.position.z=10;
-directLight.position.z=10;
+directLight.position.set(5,0,10);
 
 scene.add(pointLight);
 scene.add(directLight);
