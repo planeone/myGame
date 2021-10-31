@@ -6,7 +6,7 @@ const render=new THREE.WebGLRenderer();
 document.body.prepend(render.domElement);
 render.domElement.id="background";
 
-const pointLight=new THREE.PointLight(0xffffff,1);
+const pointLight=new THREE.PointLight(0xffffff,0.5);
 const directLight=new THREE.DirectionalLight(0xffffff,0.5);
 
 
