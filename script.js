@@ -13,7 +13,7 @@ const directLight=new THREE.DirectionalLight(0xffffff,1);
 const texture=new THREE.TextureLoader();
 const obj=new THREE.OBJLoader();
 
-const mesh;
+let mesh;
 
 obj.load("Dice.obj",function(object){
 	scene.add(object);
