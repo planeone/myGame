@@ -6,8 +6,9 @@ const render=new THREE.WebGLRenderer();
 document.body.prepend(render.domElement);
 render.domElement.id="background";
 
-const pointLight=new THREE.PointLight(0xffffff,0.5);
+const pointLight=new THREE.PointLight(0xffffff,1);
 const directLight=new THREE.DirectionalLight(0xffffff,0.5);
+const ambientLight=new THREE.AmbientLight(0xffffff,0.4);
 
 
 const texture=new THREE.TextureLoader();
@@ -28,6 +29,7 @@ directLight.position.z=10;
 
 scene.add(pointLight);
 scene.add(directLight);
+scene.add(ambientLight);
 
 function cycle(){
 	requestAnimationFrame(cycle);
