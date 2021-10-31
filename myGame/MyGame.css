@@ -1,0 +1,68 @@
+#canvas{
+	position:relative;
+	top:-610px
+}
+
+#button3{
+	position: absolute;
+    top: 1%;
+    left: 70%;
+}
+
+.buttonHref{
+	border:10px solid rgb(102,102,102);
+	font-size:50px;
+	color:rgb(255,255,255);
+	background:rgb(154,154,154);
+	border-radius:20px 
+}
+
+#window{
+   background:rgb(0,255,255);
+   overflow:hidden
+}
+
+#Button{
+	width:150px;
+	height:50px;
+	position:absolute;
+	top:1%;
+	left:1%
+}
+
+#button4{
+	position:relative;
+	top:-1300px;
+	left:-50px;
+}
+
+#endgame{
+	background:rgb(0,0,0,0.8);
+	position:relative;
+	top:-1200px;
+	left:100px;
+}
+
+#Button2{
+	width:150px;
+	height:100px;
+	position:relative;
+	top:-1270px;
+	left:-350px;
+}
+
+#restart{
+   width:104px;
+   height:78px;
+   position:relative;
+   top:-1270px;
+   left:-640px;   
+}
+
+#pleyerImage{
+  width:300px;
+  height:300px; 
+  position: absolute;
+  top: 5%;
+  left: 20%;
+}

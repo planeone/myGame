@@ -1,0 +1,35 @@
+#button{
+	border:20px solid rgb(0,58,100);
+	position:absolute;
+	font-size:200px;
+	top:10%;
+	left:30%;
+	color:green;
+	background:blue;
+	border-radius:20px 
+}
+
+#button2{
+	border:20px solid rgb(0,58,100);
+	position:relative;
+	font-size:100px;
+	color:rgb(0,200,0);
+	background:rgb(0,0,200);
+	top:10%;
+	left:31%;
+	border-radius:20px 
+	
+}
+
+body{
+	background:rgb(0,255,255);
+	overflow:hidden;
+}
+
+#image{
+	position:relative;
+	top:400px;
+	left:-20px;
+	width:2010px;
+	height:500px;
+}

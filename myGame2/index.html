@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>маги 2д земля</title>
+		<link rel="stylesheet" href="./style.css">
+	</head>
+	<body>
+		<script type="shader" id="vertex">
+			attribute vec3 a_vertex;
+			attribute vec3 a_color;
+			
+			uniform mat4 u_matrix1;
+			uniform mat4 u_matrix2;
+			uniform mat4 u_matrix3;
+			uniform mat4 u_matrix4;
+			uniform mat4 u_matrix5;
+			
+			varying vec3 color;
+			vec4 geometry;
+			
+			void main(){
+				color=a_color;
+				geometry=vec4(a_vertex,1)*u_matrix1*u_matrix2*u_matrix3*u_matrix4*u_matrix5;
+				gl_Position=vec4(geometry[0]/(geometry[2]+2.0),geometry[1]/(geometry[2]+2.0),geometry[2],1);
+			
+			}
+		</script>
+		<script type="shader" id="fragment">
+			precision highp float;
+			
+			varying vec3 color;
+			
+			void main(){
+				gl_FragColor=vec4(color,1);
+			}
+		</script>
+		<canvas id="canvas1"></canvas>
+		<canvas id="canvas2"></canvas>
+		<script src="./script.js"></script>
+	</body>
+</html>

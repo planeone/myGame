@@ -1,0 +1,60 @@
+body{
+	background:black;
+	padding:0px;
+	margin:0px;
+}
+
+header{
+	padding:0px;
+	margin:0px;
+	background:url("universe (2).jpg");
+	z-index:2;
+}
+h1{
+	margin:0px;
+	font-size:150px;
+	padding-left:20%;
+}
+
+div{
+	background:rgba(0,0,0,0);
+}
+
+#pley1{
+	color:green;
+	background:blue;
+	font-size:100px;
+	text-decoration:none;
+	border-radius:10px;
+	padding-left:40px;
+	padding-right:40px;
+}
+
+#button1{
+	padding-left:34%;
+	padding-bottom:100px;
+}
+
+#img{
+	width:100px;
+	height:100px;
+	padding-top:200px;
+	padding-bottom:300px;
+	padding-left:40%;
+}
+
+.img{
+	width:200px;
+	height:200px;
+	float:left;
+	margin:10px;
+}
+
+#myFoto{
+	padding-left:15%;
+}
+
+#background{
+	position:fixed;
+	z-index:-1;
+}

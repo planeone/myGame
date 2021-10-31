@@ -1,0 +1,88 @@
+body{
+   background:rgb(0,255,255);
+   overflow:hidden;  
+}
+#canvas{
+   position:absolute;
+   left:0px;  
+}
+
+.Href{
+	border:10px solid rgb(102,102,102);
+	font-size:50px;
+	color:rgb(255,255,255);
+	background:rgb(154,154,154) 	
+}
+
+#buttonMenu{
+   position:relative;
+   top:-500px;
+   left:-200px;
+   border-radius:20px   
+}
+
+#stopButton{
+	width:150px;
+	height:50px;
+	position: absolute;
+    top: 7%;
+    left: 2%;
+}
+
+.map1{
+  margin:10px;
+  float:left;
+  width:100px;
+  height:100px;  
+}
+
+#map{
+  height:120px;
+  width:600px;
+  border:10px solid rgb(255,255,0);
+  border-radius:20px;
+  background:rgb(138,48,48);
+  position: absolute;
+  left: 100px;
+  top:80%;
+}
+
+#menuCanvas{
+  background:rgba(0,0,0,0.6);
+  position:absolute;
+  left:10%;
+  top:10%; 
+}
+
+#menuPleyer{
+   position:absolute;
+   left:18%;
+   top:13%;  
+}
+
+#menuButton{
+   border:10px solid rgb(102,102,102);
+   font-size:50px;
+   border-radius:20px;
+   background:rgb(154,154,154);
+   color:rgb(255,255,255);   
+   position:absolute;
+   top:60%;
+   left:33%;  
+}
+
+#menuButton2{
+	width:150px;
+	height:100px;
+	position:absolute;
+	top:58%;
+	left:20%;
+}
+
+#menuButton3{
+   width:104px;
+   height:78px;	
+   position:absolute;
+   top:60%;
+   left:11%;
+}
