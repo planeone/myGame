@@ -15,13 +15,16 @@ const obj=new THREE.OBJLoader();
 
 obj.load("Dice.obj",function(object){
 	scene.add(object);
+	mesh=object;
 });
 
 
 
 scene.background=texture.load("banner.jpg");
 
-camera.position.z=10
+camera.position.z=10;
+pointLight.position.z=10;
+directLight.position.z=10;
 
 scene.add(pointLight);
 scene.add(directLight);
