@@ -14,8 +14,6 @@ render.setSize(window.innerWidth,window.innerHeight);
 const texture=new THREE.TextureLoader();
 const obj=new THREE.OBJLoader();
 
-let mesh=null;
-
 obj.load("Dice.obj",function(object){
 	scene.add(object);
 	mesh=object;
