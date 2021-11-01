@@ -34,7 +34,7 @@ window.addEventListener("resize",function(event){
 	camera.aspect=window.innerWidth/window.innerHeight;
 	camera.updateProjectionMatrix();
 	if(document.body.clientWidth<document.body.clientHeight){
-		mesh.scale.set(0.5,0.5,0.5);
+		mesh.scale.set(0.2,0.2,0.2);
 	}else{
 		mesh.scale.set(1,1,1);
 	}
