@@ -21,7 +21,10 @@ obj.load("Dice.obj",function(object){
 	mesh=object;
 });
 
-const scaleXYZ=mesh.scale;
+
+console.log(mesh);
+
+const scaleXYZ=mesh.position;
 
 scene.background=texture.load("banner.jpg");
 
