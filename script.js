@@ -16,6 +16,7 @@ const obj=new THREE.OBJLoader();
 
 obj.load("Dice.obj",function(object){
 	scene.add(object);
+	object.scale.set(0.5,0.5,0.5);
 	mesh=object;
 });
 
@@ -33,11 +34,6 @@ window.addEventListener("resize",function(event){
 	render.setSize(window.innerWidth,window.innerHeight);
 	camera.aspect=window.innerWidth/window.innerHeight;
 	camera.updateProjectionMatrix();
-	if(document.body.clientWidth<document.body.clientHeight){
-		mesh.scale.set(0.2,0.2,0.2);
-	}else{
-		mesh.scale.set(1,1,1);
-	}
 });
 
 function cycle(){
