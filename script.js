@@ -32,15 +32,13 @@ scene.add(pointLight);
 scene.add(directLight);
 
 window.addEventListener("resize",function(event){
-	const scaleXYZ=mesh.scale;
-	console.log(scaleXYZ);
 	render.setSize(window.innerWidth,window.innerHeight);
 	camera.aspect=window.innerWidth/window.innerHeight;
 	camera.updateProjectionMatrix();
 	if(window.innerWidth<window.innerHeight){
 		mesh.scale.set(0.5,0.5,0.5);
 	}else{
-		mesh.scale=scaleXYZ;
+		mesh.scale.set(1,1,1);
 	}
 });
 
