@@ -3,8 +3,6 @@ const camera=new THREE.PerspectiveCamera(45,window.innerWidth/window.innerHeight
 
 const render=new THREE.WebGLRenderer();
 
-const scaleXYZ;
-
 document.body.prepend(render.domElement);
 render.domElement.id="background";
 
@@ -21,9 +19,7 @@ obj.load("Dice.obj",function(object){
 	mesh=object;
 });
 
-scaleXYZ=mesh.scale;
-
-
+const scaleXYZ=mesh.scale;
 
 scene.background=texture.load("banner.jpg");
 
