@@ -22,10 +22,6 @@ obj.load("Dice.obj",function(object){
 });
 
 
-console.log(mesh);
-
-const scaleXYZ=mesh.position;
-
 scene.background=texture.load("banner.jpg");
 
 camera.position.z=10;
@@ -36,6 +32,7 @@ scene.add(pointLight);
 scene.add(directLight);
 
 window.addEventListener("resize",function(event){
+	const scaleXYZ=mesh.position;
 	render.setSize(window.innerWidth,window.innerHeight);
 	camera.aspect=window.innerWidth/window.innerHeight;
 	camera.updateProjectionMatrix();
