@@ -9,6 +9,7 @@ render.domElement.id="background";
 const pointLight=new THREE.PointLight(0xffffff,1);
 const directLight=new THREE.DirectionalLight(0xffffff,0.3);
 
+render.setSize(window.innerWidth,window.innerHeight);
 
 const texture=new THREE.TextureLoader();
 const obj=new THREE.OBJLoader();
