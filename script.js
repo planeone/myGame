@@ -3,6 +3,8 @@ const camera=new THREE.PerspectiveCamera(45,window.innerWidth/window.innerHeight
 
 const render=new THREE.WebGLRenderer();
 
+const scaleXYZ;
+
 document.body.prepend(render.domElement);
 render.domElement.id="background";
 
@@ -19,6 +21,8 @@ obj.load("Dice.obj",function(object){
 	mesh=object;
 });
 
+scaleXYZ=mesh.scale;
+
 
 
 scene.background=texture.load("banner.jpg");
@@ -34,6 +38,11 @@ window.addEventListener("resize",function(event){
 	render.setSize(window.innerWidth,window.innerHeight);
 	camera.aspect=window.innerWidth/window.innerHeight;
 	camera.updateProjectionMatrix();
+	if(window.innerWidth<window.innerHeight){
+		mesh.scale.set(0.5,0.5,0.5);
+	}else{
+		mesh.scale=scaleXYZ;
+	}
 });
 
 function cycle(){
