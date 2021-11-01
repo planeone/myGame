@@ -29,9 +29,14 @@ directLight.position.set(5,0,5);
 scene.add(pointLight);
 scene.add(directLight);
 
+window.addEventListener("resize",function(event){
+	render.setSize(window.innerWidth,window.innerHeight);
+	camera.aspect=window.innerWidth/window.innerHeight;
+	camera.updateProjectionMatrix();
+});
+
 function cycle(){
 	requestAnimationFrame(cycle);
-	render.setSize(window.innerWidth,window.innerHeight);
 	render.render(scene,camera);
 	mesh.rotation.x+=0.01;
 	mesh.rotation.y+=0.01;
